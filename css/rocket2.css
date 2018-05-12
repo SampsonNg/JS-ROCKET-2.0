@@ -1,0 +1,135 @@
+body{
+	color: white;
+	text-align: center;
+}
+
+h1{
+	font-family: 'Work Sans' ,'Trebuchet MS', sans-serif;
+	padding-top: 75px;
+	font-size: 80px;
+}
+
+a{
+	font-family: 'Trebuchet MS';
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+	display: inline-block;
+	border-radius: 200px;
+	border-color: white;
+	border-style: solid;
+	padding: 40px 30px;
+	background-color:grey; 
+	transition: background-color 200ms,color 200ms,font-weight 200ms, padding 200ms;
+}
+
+a:hover{
+	background-color: lightgrey;
+	color: #333333;
+	font-weight: bold;
+	padding: 40px 27px;
+}
+
+.left{
+	position: fixed;
+	width: 50%;
+	height:100%;
+	left: 0;
+	top:0;
+	background-color: #333333;
+}
+
+.right{
+	position:fixed;
+	width: 50%;
+	height:100%;
+	right: 0;
+	top:0;
+	background: url('../img/original.gif');
+}
+
+.nervous{
+	display: block;
+	position: absolute;
+	background: url('../img/nervous.png')no-repeat;
+	height: 100px;
+	width: 223px;
+	bottom: 210px;
+	left: 15%;
+}
+
+.nervous2{
+	display: none;
+}
+
+.cantwait{
+	display: block;
+	position: absolute;
+	background: url('../img/cantwait.png')no-repeat;
+	height: 65px;
+	width: 206px;
+	bottom: 160px;
+	left:55%;
+}
+
+.cantwait2{
+	display: none;
+}
+
+.rocket{
+	background: url('../img/rocket1.png') no-repeat;
+	position: absolute;
+	height: 272px;
+	width:143px;
+	left: 50%;
+	margin-left: -71.5px;
+	bottom:40px;
+	transition: bottom 10000ms;
+	transition-delay: 200ms;
+}
+
+.ground{
+	background: url('../img/ground.png') no-repeat;
+	position: absolute;
+	height: 15px;
+	width:100%;
+	bottom:60px;
+	z-index: -1;
+}
+
+.b1,
+.b2,
+.b3,
+.b4,
+.b5{
+	display:none;
+}
+
+.a1 .b1,
+.a2 .b2,
+.a3 .b3,
+.a4 .b4,
+.a5 .b5{
+	display:block;
+}
+
+.a1 .rocket{
+	transition: none;
+}
+
+.a2 .rocket{
+	background: url('../img/rocket2.gif') no-repeat;
+}
+.a3 .rocket{
+	background: url('../img/rocket3.gif') no-repeat;
+}
+.a5 .rocket{
+	background: url('../img/boom.png') no-repeat;
+	height: 200px;
+	width: 209px;
+}
+
+.a3 .rocket,
+.a4 .rocket{
+	bottom: 1000px;
+}
